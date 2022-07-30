@@ -18,7 +18,7 @@ a{
     margin-top:3px;
 }
 .players{
-    border:1px solid;
+    1px solid;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     grid-row-gap:29px;
@@ -43,7 +43,7 @@ a{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     grid-row-gap:26px;
-    border:1px solid;
+    1px solid;
 }
 .blog{
     
@@ -83,7 +83,7 @@ a{
     height:104px;
 }
 .course-info{
-    border:1px solid;
+    1px solid;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -98,4 +98,51 @@ a{
 .fa-star.empty{
     color: #AEAEAE;
 
+}
+main{
+    1px solid red;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.container{
+    background:#fff;
+    width:870px;
+    padding:30px;
+    border-radius:5px;
+    margin-top:21px;
+}
+ 
+/* media query ---- */
+/* mobile devices --- */
+@media screen and (max-width:688px){
+    .container{
+        width:100%;
+        background: yellow;
+      
+    }
+    .players, .blogs, .courses{
+        grid-template-columns:repeat(1,1fr);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* tablet device -- */
+@media screen and (min-width:689px) and (max-width:992px){
+    .container{
+        width:100%;
+    }
+    .players, .courses{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .blogs{
+        grid-template-columns:repeat(1,1fr);
+        background: red;
+    }
 }
