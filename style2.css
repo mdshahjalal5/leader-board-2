@@ -68,3 +68,34 @@ a{
     font-size:16px;
     color:#562eff;
 }
+
+/* course style -- */
+.courses{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap:25px;
+}
+.course{
+    width:252px;
+}
+.course .course-banner img{
+    width:224px;
+    height:104px;
+}
+.course-info{
+    border:1px solid;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.fa-star{
+    font-size:12px;
+}
+
+.fa-star.filled{
+    color:#FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+
+}
